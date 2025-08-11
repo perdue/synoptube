@@ -5,6 +5,7 @@ import (
 	"log"
 	"os"
 
+	"github.com/perdue/synoptube/pkg/summarize"
 	"github.com/spf13/cobra"
 )
 
@@ -27,6 +28,11 @@ var summarizeCmd = &cobra.Command{
 		// Print a message acknowledging the input.
 		fmt.Printf("Received YouTube URL: %s\n", youtubeURL)
 		fmt.Println("Processing for summarization...")
+
+		if err := summarize.ProcessVideo(); err != nil {
+			fmt.Printf("Error: %s\n", err)
+			os.Exit(1)
+		}
 
 		// A placeholder for the actual summarization logic.
 		// In a real application, you would pass this URL to your core logic.

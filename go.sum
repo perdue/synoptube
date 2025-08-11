@@ -1,3 +1,5 @@
+github.com/chand1012/yt_transcript v0.1.1 h1:TQVfD35l7sQpoK9RvnE7zSJyPeLocRwUwKtRJ5EfrF4=
+github.com/chand1012/yt_transcript v0.1.1/go.mod h1:E2k+NkLL+YkFUMaa3+Mk2ymFjXLs0Rsjk3+EkODeVrs=
 github.com/cpuguy83/go-md2man/v2 v2.0.6/go.mod h1:oOW0eioCTA6cOiMLiUPZOpcVxMig6NIQQ7OS05n1F4g=
 github.com/inconshreveable/mousetrap v1.1.0 h1:wN+x4NVGpMsO7ErUn/mUI3vEoE6Jt13X2s0bqwp9tc8=
 github.com/inconshreveable/mousetrap v1.1.0/go.mod h1:vpF70FUmC8bwa3OWnCshd2FqLfsEA9PFc4w1p2J65bw=

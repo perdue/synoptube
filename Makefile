@@ -13,6 +13,18 @@ CMD_DIRS := $(wildcard cmd/*)
 # For example, 'cmd/server' becomes 'server'.
 CMDS := $(notdir $(CMD_DIRS))
 
+# You can define a custom name for your executables here.
+# For example, to build cmd/synoptube-cli as 'syt'.
+EXECUTABLE_NAME_synoptube-cli := syt
+
+# Get a list of all executable directories.
+EXECUTABLE_DIRS := $(notdir $(wildcard cmd/*))
+
+# The list of final executable names to be built.
+# This uses a 'patsubst' to substitute the directory name with the custom name.
+# If a custom name isn't defined, it falls back to the directory name.
+EXECUTABLES := $(foreach dir, $(EXECUTABLE_DIRS), $(or $(EXECUTABLE_NAME_$(dir)), $(dir)))
+
 # Find all Go files in the 'pkg' directory and its subdirectories.
 # This ensures that any changes to shared packages trigger a recompile.
 CMD_FILES := $(shell find cmd -name "*.go")

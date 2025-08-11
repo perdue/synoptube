@@ -2,7 +2,10 @@ module github.com/perdue/synoptube
 
 go 1.24.6
 
-require github.com/spf13/cobra v1.9.1
+require (
+	github.com/chand1012/yt_transcript v0.1.1
+	github.com/spf13/cobra v1.9.1
+)
 
 require (
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
