@@ -1,1 +1,1 @@
-# synoptube
+# syt
