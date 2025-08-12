@@ -1,10 +1,11 @@
-module github.com/perdue/synoptube
+module github.com/perdue/syt
 
 go 1.24.6
 
 require (
 	github.com/chand1012/yt_transcript v0.1.1
 	github.com/spf13/cobra v1.9.1
+	golang.org/x/oauth2 v0.30.0
 )
 
 require (

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/perdue/synoptube/pkg/summarize/internal/transcript"
+	"github.com/perdue/syt/pkg/summarize/internal/transcript"
 )
 
 func TestFetchTranscript(t *testing.T) {

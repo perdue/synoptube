@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/perdue/synoptube/pkg/summarize"
+	"github.com/perdue/syt/pkg/summarize"
 	"github.com/spf13/cobra"
 )
 

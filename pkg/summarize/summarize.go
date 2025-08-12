@@ -1,11 +1,13 @@
 package summarize
 
-import "github.com/perdue/synoptube/pkg/summarize/internal/transcript"
+import "github.com/perdue/syt/pkg/token"
 
 func ProcessVideo() error {
-	if _, err := transcript.FetchTranscript("https://youtu.be/O83iXjT2r8A"); err != nil {
-		return err
-	}
+	// if _, err := transcript.FetchTranscript("https://youtu.be/O83iXjT2r8A"); err != nil {
+	// return err
+	// }
+
+	token.Get()
 
 	return nil
 }
